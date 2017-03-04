@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body,#root{
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.root{
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+}
+header{
+  display: flex;
+  height: 80px;
+  flex-shrink: 0;
+  align-items: center;
+  /*让子元素在副轴上垂直居中*/
+  background-color: #c4caeb;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.mywrap{
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+}
+.home{
+  width: 100%;
+  background-image: url(./images/blog.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.home-cover{
+  height: 100%;
+  background-color: rgba(255,255,255,0.3);
+  display: flex;
+  flex-direction: column;
+  /*让主轴竖过来，flex-direction是改变主轴的方向*/
+  text-align: center;
+  justify-content: center;
+  /*在主轴上的对其方式*/
+}
+.home-cover h1{
+  margin-bottom: 25px;
+  color: white;
+}
+.home-cover p{
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bolder;
+  color: #020205;
+}
+.home-cover a{
+  display: block;
+  width: 8em;
+  line-height: 2.0;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bolder;
+  background-color: #5f6fc7;
+  color:white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+footer{
+  display: flex;;
+  height: 80px;
+  flex-shrink: 0;
+  align-items: center;
+  /*垂直居中*/
+  justify-content: space-around;
+  text-align: center;
+  background-color: #c4caeb;
+  color:#241915;
+}
+footer a{
+  border-right: 1px solid #241915;
+  flex-grow: 1;
+  text-decoration: none;
+  color:black;
+}
+footer a:last-child{
+  border-right: none;
+}
