@@ -12,6 +12,37 @@ html,body,#root{
   display: flex;
   flex-direction:column;
 }
+@media (min-width:750px) {
+  .root{
+    flex-direction: row;
+  }
+}
+.leftnav{
+  background-color: #31374a;
+  width: 300px;
+  flex-shrink: 0;
+}
+.leftnav h2{
+  text-align: center;
+  line-height: 2.6;
+  font-size: 24px;
+  color:#fff;
+  border-bottom: 3px solid #fff;
+}
+.leftnav a{
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 2.5;
+  padding-left: 20px;
+  color: #fff;
+}
+.leftnav i{
+  margin-right: 20px;
+}
+.leftnav a:hover{
+  background-color: #c0c0c0
+}
 header{
   display: flex;
   height: 80px;
@@ -25,7 +56,7 @@ header{
 header button{
   width: 60px;
   height: 28px;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 1);
   border: none;
   font-size: 16px;
   border-radius: 10px;
@@ -80,7 +111,7 @@ header button{
   margin-top: 10px;
 }
 .blogindex{
-  background-color: #9ea8dd;
+  background-color: #394467;
   text-align: center;
   color:white;
   font-size: 20px;
@@ -92,7 +123,7 @@ header button{
   border:1px solid white;
   border-radius: 50%;
   margin: 0 auto;
-  color:#32408f;
+  color:#fff;
 }
 .blogdesc{
   padding: 13px;
@@ -107,7 +138,7 @@ header button{
 .blogdesc a{
   display: block;
   padding: 5px 6px;
-  background-color: #36469c;
+  background-color: #454c63;
   width: 6em;
   text-decoration: none;
   color:white;
