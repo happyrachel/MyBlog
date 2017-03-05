@@ -79,6 +79,7 @@ header button{
   display: flex;
   flex-direction: column;
   /*让主轴竖过来，flex-direction是改变主轴的方向*/
+  align-items: center;
   text-align: center;
   justify-content: center;
   /*在主轴上的对其方式*/
