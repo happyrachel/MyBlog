@@ -77,9 +77,10 @@ header button{
   height: 100%;
   background-color: rgba(255,255,255,0.3);
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   /*让主轴竖过来，flex-direction是改变主轴的方向*/
   align-items: center;
+  /*在副轴上居中*/
   text-align: center;
   justify-content: center;
   /*在主轴上的对其方式*/

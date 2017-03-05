@@ -5,9 +5,11 @@ class Home extends React.Component{
     return(
       <div className='home'>
         <div className='home-cover'>
-          <h1>I'm <span>RachelLi</span></h1>
-          <p>代码如诗，生活如歌</p>
-          <a href="https://github.com/happyrachel">Follow me</a>
+          <div>
+            <h1>I'm <span>RachelLi</span></h1>
+            <p>代码如诗，生活如歌</p>
+            <a href="https://github.com/happyrachel">Follow me</a>
+          </div>
         </div>
       </div>
     )
