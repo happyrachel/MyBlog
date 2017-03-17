@@ -1,22 +1,18 @@
 import React from 'react';
 import Header from './components/Header.js';
 import Leftnav from './components/Leftnav.js';
-import Footer from './components/Footer.js';
 
 class App extends React.Component {
   constructor(){
     super();
     this.state={
       showLeft:false,
-      title:'主页'
+      title:'简历'
     }
   }
   setTitle(){
     this.setState({
-      title:this.props.router.isActive('/',true)?'主页':
-        this.props.router.isActive('/blog')?'博客':
-        this.props.router.isActive('/work')?'工作':
-        this.props.router.isActive('/about')?'关于':'文章'
+      title:this.props.router.isActive('/',true)?'简历':'作品'
     })
   }
   componentWillReceiveProps(){
@@ -37,7 +33,6 @@ class App extends React.Component {
         <div className='mywrap'>
           {this.props.children}
         </div>
-        {this.state.showLeft? null:<Footer/>}
       </div>
     )
   }

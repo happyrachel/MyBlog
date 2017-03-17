@@ -28,9 +28,10 @@ class Blog extends React.Component{
                 </div>
                 <div className='blogdesc'>
                   <h3>{item.title}</h3>
-                  <p>{item.desc}</p>
-                  <Link to={`post/${item.url}`}>阅读更多</Link>
-                  <span>{item.date}</span>
+                  <img src={`../images/${item.imgName}.jpg`} alt={item.imgName}/>
+                  <a href={`https://happyrachel.github.io/${item.demoAddress}`}>演示demo</a>
+                  <a href={`https://github.com/happyrachel/${item.codeAddress}`}>源码地址</a>
+                  <figcaption>{item.desc}</figcaption>
                 </div>
               </div>
         )}

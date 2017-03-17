@@ -43,9 +43,16 @@ html,body,#root{
 .leftnav a:hover{
   background-color: #c0c0c0
 }
+.leftnav .myphoto{
+  width: 200px;
+  height: 200px;
+  background-image: url(./images/me2.jpg);
+  background-size: cover;
+  margin: 25px auto;
+  border-radius: 50%;
+}
 header{
   display: flex;
-  height: 80px;
   flex-shrink: 0;
   align-items: center;
   /*让子元素在副轴上垂直居中*/
@@ -53,59 +60,64 @@ header{
   justify-content: space-between;
   padding: 0 15px;
 }
-header button{
-  width: 60px;
-  height: 28px;
-  background-color: rgba(255, 255, 255, 1);
-  border: none;
-  font-size: 16px;
-  border-radius: 10px;
+header .picture{
+  width: 100px;
+  height: 100px;
+  background-image: url(./images/me2.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  margin: 10px 0;
 }
 .mywrap{
   flex-grow: 1;
   overflow-y: auto;
   display: flex;
-}
-.home{
-  width: 100%;
   background-image: url(./images/blog.jpg);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: 50% 50%;
 }
+.home{
+  width: 100%;
+}
 .home-cover{
-  height: 100%;
   background-color: rgba(255,255,255,0.3);
   display: flex;
   /*flex-direction: column;*/
   /*让主轴竖过来，flex-direction是改变主轴的方向*/
-  align-items: center;
+  /*align-items: center;*/
   /*在副轴上居中*/
-  text-align: center;
-  justify-content: center;
+  /*text-align: center;*/
+  /*justify-content: center;*/
   /*在主轴上的对其方式*/
 }
-.home-cover h1{
-  margin-bottom: 25px;
-  color: white;
+.home-cover ul{
+  width: 100%;
 }
-.home-cover p{
-  font-size: 16px;
-  margin-bottom: 15px;
-  font-weight: bolder;
-  color: #020205;
+.home-cover ul li{
+  padding-top: 20px;
+  padding-left: 10px;
 }
-.home-cover a{
-  display: block;
-  width: 8em;
-  line-height: 2.0;
-  margin: 0 auto;
-  font-size: 16px;
-  font-weight: bolder;
-  background-color: #5f6fc7;
+.personal dt{
+  font-size: 25px;
+  color:  #1f1e21;
+  line-height: 30px;
+  border-bottom: 3px solid #424858;
+}
+.personal dd span{
+  font-size:14px;
+  margin-left: 0;
   color:white;
-  text-decoration: none;
-  border-radius: 8px;
+  font-weight: bolder;
+}
+.personal dd{
+  color:#ccc;
+  font-size: 14px;
+  line-height: 2.0;
+  padding-left: 10px;
+}
+.personal dd:nth-child(2){
+  padding-top: 10px;
 }
 .blogcard{
   width: 96%;

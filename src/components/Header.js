@@ -1,19 +1,26 @@
 import React from 'react';
-import{hashHistory} from 'react-router'
+import {Link} from 'react-router';
 
 class Header extends React.Component{
-  constructor(){
-    super();
-    this.state={
-
-    }
-  }
   render(){
     return(
       <header>
-        <button onClick={ ()=> hashHistory.goBack() }><i className="fa fa-arrow-left" aria-hidden="true"></i>返回</button>
-        <h3>Welcom to {this.props.title}</h3>
-        <button onClick={ ()=> hashHistory.push('/') }><i className="fa fa-home" aria-hidden="true"></i>首页</button>
+        <div className='picture'></div>
+        <h3>我的{this.props.title}</h3>
+        <div className="container">
+        	<ul className="menu">
+        		<li><a href="#">目录</a>
+        			<ul className="submenu">
+        				<li><a href="#">我的简历</a></li>
+                <li>
+                  <Link to='blog'>
+                    我的作品
+                  </Link>
+                </li>
+        			</ul>
+        		</li>
+        	</ul>
+        </div>
       </header>
     )
   }
