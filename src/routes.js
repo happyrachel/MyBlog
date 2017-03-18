@@ -1,9 +1,8 @@
 import React from 'react';
 import {Router,Route,hashHistory,IndexRoute} from 'react-router';
 import App from './App';
-import Blog from './components/Blog.js';
+import Project from './components/Project.js';
 import Home from './components/Home.js';
-import Post from './components/Post.js';
 
 class Routers extends React.Component{
   render(){
@@ -11,8 +10,7 @@ class Routers extends React.Component{
       <Router history={hashHistory}>
         <Route path='/' component={App}>
           <IndexRoute component={Home}/>
-          <Route path='blog' component={Blog}/>
-          <Route path='post/:title' component={Post}/>
+          <Route path='project' component={Project}/>
         </Route>
       </Router>
     )

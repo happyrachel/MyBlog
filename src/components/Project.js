@@ -1,18 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router';
 import axios from 'axios';
-import calculator from '../images/calculator.png'
-import codester from '../images/codester.png'
-import todo from '../images/todo.png'
-import eatwhat from '../images/eatwhat.png'
-import yunmeili from '../images/yunmeili.png'
-import register from '../images/register.png'
-import jd from '../images/jd.png'
-import phone from '../images/phone.png'
-import Egles from '../images/Egles.png'
-import slider from '../images/slider.png'
 
-class Blog extends React.Component{
+class Project extends React.Component{
   constructor(){
     super();
     this.state={
@@ -37,8 +27,9 @@ class Blog extends React.Component{
                 </div>
                 <div className='blogdesc'>
                   <h3>{item.title}</h3>
-                  <img src={item.imgName}/>
-                  {/* <img src={todo} /> */}
+                  <div className='product-img'>
+                    <img src={`https://raw.githubusercontent.com/happyrachel/MyBlog/master/src/images/${item.imgName}.png`} />
+                  </div>
                   <a href={`https://github.com/happyrachel/${item.codeAddress}`}>源码地址</a>
                   <a href={`https://happyrachel.github.io/${item.demoAddress}`}>演示demo</a>
                   <figcaption>{item.desc}</figcaption>
@@ -51,4 +42,4 @@ class Blog extends React.Component{
 }
 
 
-export default Blog
+export default Project

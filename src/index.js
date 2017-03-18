@@ -5,6 +5,5 @@ import Routers from './routes';
 import './main.css'
 import './post.css'
 import './app.css'
-import 'highlight.js/styles/magula.css'
 
 render(<Routers />,document.getElementById('root'));

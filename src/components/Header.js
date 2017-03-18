@@ -13,7 +13,7 @@ class Header extends React.Component{
         			<ul className="submenu">
         				<li><a href="#">我的简历</a></li>
                 <li>
-                  <Link to='blog'>
+                  <Link to='project'>
                     我的作品
                   </Link>
                 </li>

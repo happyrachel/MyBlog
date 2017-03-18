@@ -11,7 +11,7 @@ class Leftnav extends React.Component{
           <i className="fa fa-home" aria-hidden="true"></i>
           我的简历
         </Link>
-        <Link to='blog' activeStyle={{backgroundColor:'#4c5f72'}}>
+        <Link to='project' activeStyle={{backgroundColor:'#4c5f72'}}>
           <i className="fa fa-bookmark" aria-hidden="true"></i>
           我的作品
         </Link>

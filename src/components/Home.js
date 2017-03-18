@@ -41,16 +41,16 @@ class Home extends React.Component{
               <dl className='personal'>
                 <dt>主要技能</dt>
                 <dd>
-                  <button type="button" className="btn btn-success">HTML</button>
-                  <button type="button" className="btn btn-success">CSS</button>
-                  <button type="button" className="btn btn-success">JS</button>
-                  <button type="button" className="btn btn-success">jquery</button>
-                  <button type="button" className="btn btn-success">Bootstrap</button>
-                  <button type="button" className="btn btn-success">git</button>
-                  <button type="button" className="btn btn-success">React</button>
-                  <button type="button" className="btn btn-success">HTTP</button>
-                  <button type="button" className="btn btn-success">ES6</button>
-                  <button type="button" className="btn btn-success">Ajax</button>
+                  <button type="button" className="btn btn-primary">HTML</button>
+                  <button type="button" className="btn btn-primary">CSS</button>
+                  <button type="button" className="btn btn-primary">JS</button>
+                  <button type="button" className="btn btn-primary">jquery</button>
+                  <button type="button" className="btn btn-primary">Bootstrap</button>
+                  <button type="button" className="btn btn-primary">git</button>
+                  <button type="button" className="btn btn-primary">React</button>
+                  <button type="button" className="btn btn-primary">HTTP</button>
+                  <button type="button" className="btn btn-primary">ES6</button>
+                  <button type="button" className="btn btn-primary">Ajax</button>
                 </dd>
               </dl>
             </li>
