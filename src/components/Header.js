@@ -1,27 +1,36 @@
 import React from 'react';
 import {Link} from 'react-router';
+import Footer from './Footer.js'
 
 class Header extends React.Component{
+  constructor(){
+    super();
+    this.state={
+      active:false
+    }
+  }
+  handleClick(){
+    if(this.state.active){
+      this.setState({active:false})
+    }else{
+      this.setState({active:true})
+    }
+  }
   render(){
     return(
-      <header>
-        <div className='picture'></div>
-        <h3>我的{this.props.title}</h3>
-        <div className="container">
-        	<ul className="menu">
-        		<li><a href="#">目录</a>
-        			<ul className="submenu">
-        				<li><a href="#">我的简历</a></li>
-                <li>
-                  <Link to='project'>
-                    我的作品
-                  </Link>
-                </li>
-        			</ul>
-        		</li>
-        	</ul>
-        </div>
-      </header>
+      <div>
+        <header>
+          <div className='picture'></div>
+          <h3>我的{this.props.title}</h3>
+          <div className="container">
+            <a href="#" onClick={this.handleClick.bind(this)}><i className="fa fa-align-justify" aria-hidden="true"></i></a>
+          </div>
+        </header>
+        {this.state.active?
+          <Footer />:
+          <div></div>
+        }
+    </div>
     )
   }
 }

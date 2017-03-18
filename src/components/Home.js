@@ -35,6 +35,11 @@ class Home extends React.Component{
                     https://happyrachel.github.io
                   </a>
                 </dd>
+                <dd><i className="fa fa-link" aria-hidden="true"></i><span>简历源码：</span>
+                  <a href='https://github.com/happyrachel/MyBlog'>
+                    https://github.com/happyrachel/MyBlog
+                  </a>
+                </dd>
               </dl>
             </li>
             <li>
