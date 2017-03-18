@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
 import axios from 'axios';
-import cloud from '../images/yunmeili.png'
 
 class Blog extends React.Component{
   constructor(){
@@ -28,8 +27,8 @@ class Blog extends React.Component{
                 </div>
                 <div className='blogdesc'>
                   <h3>{item.title}</h3>
-                  {/* <img src={`../images/${item.imgName}.jpg`} alt={item.imgName}/> */}
-                  <img src={cloud}/>
+                  <img src={`${item.imgName}.png`} alt={item.imgName}/>
+                  {/* <img src={cloud}/> */}
                   <a href={`https://github.com/happyrachel/${item.codeAddress}`}>源码地址</a>
                   <a href={`https://happyrachel.github.io/${item.demoAddress}`}>演示demo</a>
                   <figcaption>{item.desc}</figcaption>
