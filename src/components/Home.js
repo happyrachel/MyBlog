@@ -8,7 +8,7 @@ class Home extends React.Component{
           <ul>
             <li>
               <dl className='personal'>
-                <dt>基本信息</dt>
+                <dt><i className="fa fa-heartbeat" aria-hidden="true"></i>基本信息</dt>
                 <dd><span>个人信息:</span>李颖伟/24岁/女</dd>
                 <dd><span>毕业院校：</span>河北工程大学</dd>
                 <dd><span>学历：</span>本科</dd>
@@ -20,16 +20,17 @@ class Home extends React.Component{
             <li>
               <dl className='personal'>
                 <dt>联系方式</dt>
-                <dd><span>联系电话：</span>15703379680</dd>
-                <dd><span>QQ：</span>825255583@qq.com</dd>
-                <dd><span>微信：</span>lyw825255583</dd>
-                <dd><span>邮箱：</span>825255583@qq.com</dd>
-                <dd><span>github：</span>
+                <dd><i className="fa fa-phone" aria-hidden="true"></i><span>联系电话：</span>15703379680</dd>
+                <dd><i className="fa fa-qq" aria-hidden="true"></i><span>QQ：</span>825255583@qq.com</dd>
+                <dd><i className="fa fa-weixin" aria-hidden="true"></i><span>微信：</span>lyw825255583</dd>
+                <dd><i className="fa fa-envelope" aria-hidden="true"></i>
+                    <span>邮箱：</span>825255583@qq.com</dd>
+                <dd><i className="fa fa-github" aria-hidden="true"></i><span>github：</span>
                   <a href='https://github.com/happyrachel'>
                     https://github.com/happyrachel
                   </a>
                 </dd>
-                <dd><span>Markdown笔记：</span>
+                <dd><i className="fa fa-bookmark" aria-hidden="true"></i><span>Markdown笔记：</span>
                   <a href='https://happyrachel.github.io'>
                     https://happyrachel.github.io
                   </a>

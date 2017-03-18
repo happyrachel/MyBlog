@@ -110,6 +110,9 @@ header .picture{
   color:white;
   font-weight: bolder;
 }
+.personal dd i{
+  margin-right: 10px;
+}
 .personal dd{
   color:#ccc;
   font-size: 14px;
@@ -123,9 +126,10 @@ header .picture{
   width: 96%;
   margin: 0 auto;
   margin-top: 10px;
+  background-color: #efeced;
 }
 .blogindex{
-  background-color: #394467;
+  background-color: #333d5d;;
   text-align: center;
   color:white;
   font-size: 20px;
@@ -145,28 +149,36 @@ header .picture{
   color:#777;
   position: relative;
 }
-.blogdesc p{
-  font-size: 14px;
-  margin: 15px 10px;
+.blogdesc h3{
+  text-align: center;
+  color: #31374a;
 }
 .blogdesc a{
-  display: block;
   padding: 5px 6px;
   background-color: #454c63;
-  width: 6em;
   text-decoration: none;
   color:white;
   border-radius: 10px;
   text-align: center;
   font-size: 14px;
 }
+.blogdesc a:nth-child(3){
+  float: left;
+}
+.blogdesc a:nth-child(3){
+  float: right;
+}
 .blogdesc a:hover{
   box-shadow: 1px 3px 7px #7986d0;
 }
-.blogdesc span{
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
+.blogdesc img{
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 5px
+}
+figcaption {
+  margin-top: 20px;
+  font-size: 14px;
 }
 footer{
   display: flex;;
