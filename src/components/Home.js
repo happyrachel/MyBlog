@@ -8,7 +8,7 @@ class Home extends React.Component{
           <ul>
             <li>
               <dl className='personal'>
-                <dt><i className="fa fa-heartbeat" aria-hidden="true"></i>基本信息</dt>
+                <dt><i className="fa fa-address-book-o" aria-hidden="true"></i>基本信息</dt>
                 <dd><span>个人信息:</span>李颖伟/24岁/女</dd>
                 <dd><span>毕业院校：</span>河北工程大学</dd>
                 <dd><span>学历：</span>本科</dd>
@@ -19,7 +19,7 @@ class Home extends React.Component{
             </li>
             <li>
               <dl className='personal'>
-                <dt>联系方式</dt>
+                <dt><i className="fa fa-handshake-o" aria-hidden="true"></i>联系方式</dt>
                 <dd><i className="fa fa-phone" aria-hidden="true"></i><span>联系电话：</span>15703379680</dd>
                 <dd><i className="fa fa-qq" aria-hidden="true"></i><span>QQ：</span>825255583@qq.com</dd>
                 <dd><i className="fa fa-weixin" aria-hidden="true"></i><span>微信：</span>lyw825255583</dd>
@@ -39,7 +39,7 @@ class Home extends React.Component{
             </li>
             <li>
               <dl className='personal'>
-                <dt>主要技能</dt>
+                <dt><i className="fa fa-tags" aria-hidden="true"></i>主要技能</dt>
                 <dd>
                   <button type="button" className="btn btn-primary">HTML</button>
                   <button type="button" className="btn btn-primary">CSS</button>
@@ -56,7 +56,7 @@ class Home extends React.Component{
             </li>
             <li>
               <dl className='personal'>
-                <dt>自我评价</dt>
+                <dt><i className="fa fa-heartbeat" aria-hidden="true"></i>自我评价</dt>
                 <dd>
                   <p>本人自2015年毕业开始进入秦皇岛商之翼网络科技有限公司进行实习，开始以解决客户bug为主，后期整理修改免费模板，并对官网进行一定的管理和更新，后因销售部缺人便调到销售部门，但是自己还是喜欢计算机代码编程，故辞职，报了一个培训班，跟随业界大咖peter学习了如今最热的React框架，发现自己对于做出来的东西感到特别开心，希望能找到一个平台，延续自己的快乐</p>
                 </dd>

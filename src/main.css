@@ -7,6 +7,12 @@ html,body,#root{
   height: 100%;
   -webkit-overflow-scrolling: touch;
 }
+a{
+  color:black;
+}
+h3{
+  margin: 0 auto;
+}
 .root{
   height: 100%;
   display: flex;
@@ -16,6 +22,26 @@ html,body,#root{
   .root{
     flex-direction: row;
   }
+}
+@media (min-width: 1000px) {
+    .blog {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .blog .blogcard {
+        margin: 20px;
+        width: calc(50% - 40px);
+    }
+}
+@media (min-width: 1200px) {
+    .blog .blogcard  {
+        width: calc(33.3333% - 40px);
+    }
+}
+@media (min-width: 1500px) {
+    .blog .blogcard  {
+        width: calc(25% - 40px);
+    }
 }
 .leftnav{
   background-color: #31374a;
@@ -61,18 +87,22 @@ header{
   padding: 0 15px;
 }
 header .picture{
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   background-image: url(./images/me2.jpg);
   background-size: cover;
   border-radius: 50%;
   margin: 10px 0;
 }
+.menu a{
+  float: right;
+}
+.menu .submenu {
+  margin-left: 21px;
+  background-color: #c4caeb;
+}
 .btn-primary{
   margin: 3px 3px;
-}
-a{
-  color:black;
 }
 .mywrap{
   flex-grow: 1;
@@ -89,6 +119,7 @@ a{
 .home-cover{
   background-color: rgba(255,255,255,0.3);
   display: flex;
+  height: 100vh;
 }
 .home-cover ul{
   width: 100%;
@@ -109,7 +140,7 @@ a{
   color:white;
   font-weight: bolder;
 }
-.personal dd i{
+.personal  i{
   margin-right: 10px;
 }
 .personal dd{
@@ -120,6 +151,9 @@ a{
 }
 .personal dd:nth-child(2){
   padding-top: 10px;
+}
+.blog{
+  width: 100%;
 }
 .blogcard{
   width: 83%;
@@ -147,8 +181,9 @@ a{
   box-shadow: 1px 2px 9px 1px #9ea8dd;
   color:#777;
   position: relative;
+  height: 68vh;
 }
-.blogdesc h3{
+.blogdesc h4{
   text-align: center;
   color: #31374a;
 }
@@ -159,29 +194,32 @@ a{
   color:white;
   border-radius: 10px;
   text-align: center;
-  font-size: 14px;
-}
-.blogdesc a:nth-child(3){
-  float: left;
-}
-.blogdesc a:nth-child(3){
-  float: right;
+  font-size: 12px;
+  line-height: 1.8;
 }
 .blogdesc a:hover{
   box-shadow: 1px 3px 7px #7986d0;
 }
-.blogdesc img{
-  width: 100%;
-  margin: 10px 0;
-  border-radius: 5px
-}
 .product-img{
   width: 80%;
+  height: 50%;
   margin: 0 auto;
+  -webkit-background-size: cover;;
+  background-size: cover;;
+}
+.lianjie{
+  margin-top: 15px;
+  overflow: hidden;
+}
+.lianjie a:nth-child(1){
+  float: left;
+}
+.lianjie a:nth-child(2){
+  float: right;
 }
 figcaption {
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 13px;
 }
 footer{
   display: flex;;

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 import axios from 'axios';
-
+import {ProgressBar} from 'react-bootstrap'
 class Project extends React.Component{
   constructor(){
     super();
@@ -15,9 +15,10 @@ class Project extends React.Component{
   }
   render(){
     return(
-      <div style={{width:'100%'}}>
+      <div className='blog'>
         {this.state.data.length==0 ?
-          '数据正在加载':
+           <ProgressBar active now={45} />
+          :
             this.state.data.map( (item,i) =>
               <div key={i} className='blogcard'>
                 <div className='blogindex'>
@@ -26,12 +27,13 @@ class Project extends React.Component{
                   </div>
                 </div>
                 <div className='blogdesc'>
-                  <h3>{item.title}</h3>
-                  <div className='product-img'>
-                    <img src={`https://raw.githubusercontent.com/happyrachel/MyBlog/master/src/images/${item.imgName}.png`} />
+                  <h4>{item.title}</h4>
+                  <div className='product-img' style={{backgroundImage:`url(https://raw.githubusercontent.com/happyrachel/MyBlog/master/src/images/${item.imgName}.png)`}}>
                   </div>
-                  <a href={`https://github.com/happyrachel/${item.codeAddress}`}>源码地址</a>
-                  <a href={`https://happyrachel.github.io/${item.demoAddress}`}>演示demo</a>
+                  <div className='lianjie'>
+                    <a href={`https://github.com/happyrachel/${item.codeAddress}`}>源码地址</a>
+                    <a href={`https://happyrachel.github.io/${item.demoAddress}`}>演示demo</a>
+                  </div>
                   <figcaption>{item.desc}</figcaption>
                 </div>
               </div>
