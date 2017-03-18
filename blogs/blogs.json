@@ -1,5 +1,5 @@
 [
-  {"title":"云美丽首页","desc":"一个电商网站项目，总共包含六个子页面，含首页、列表页、详情页、支付页、注册页、登录页。并且包含基本的逻辑功能，购物车、轮播、标签页等等都是使用原生JS来开发的。","imgName":"yunmeili","demoAddress":"Beautyclouds","codeAddress":"Beautyclouds"},
+  {"title":"云美丽首页","desc":"一个电商网站项目，总共包含六个子页面，含首页、列表页、详情页、支付页、注册页、登录页。并且包含基本的逻辑功能，购物车、轮播、标签页等等都是使用原生JS来开发的。","imgName":"yunmeili.png","demoAddress":"Beautyclouds","codeAddress":"Beautyclouds"},
   {"title":"观见学校","desc":"手机端页面，总共包含四个页面。","imgName":"phone","demoAddress":"Guanxian-phone","codeAddress":"Guanxian-phone"},
   {"title":"Egles","desc":"通过div+css设计的框架","imgName":"Egles","demoAddress":"Egles","codeAddress":"Egles"},
   {"title":"jd购物车结算页面","desc":"通过原生js写的购物车结算页面，实现了全选/计算等功能","imgName":"jd","demoAddress":"Jdshopping","codeAddress":"Jdshopping"},

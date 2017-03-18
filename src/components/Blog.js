@@ -1,6 +1,16 @@
 import React from 'react';
 import {Link} from 'react-router';
 import axios from 'axios';
+import calculator from '../images/calculator.png'
+import codester from '../images/codester.png'
+import todo from '../images/todo.png'
+import eatwhat from '../images/eatwhat.png'
+import yunmeili from '../images/yunmeili.png'
+import register from '../images/register.png'
+import jd from '../images/jd.png'
+import phone from '../images/phone.png'
+import Egles from '../images/Egles.png'
+import slider from '../images/slider.png'
 
 class Blog extends React.Component{
   constructor(){
@@ -27,8 +37,8 @@ class Blog extends React.Component{
                 </div>
                 <div className='blogdesc'>
                   <h3>{item.title}</h3>
-                  <img src={`${item.imgName}.png`} alt={item.imgName}/>
-                  {/* <img src={cloud}/> */}
+                  <img src={item.imgName}/>
+                  {/* <img src={todo} /> */}
                   <a href={`https://github.com/happyrachel/${item.codeAddress}`}>源码地址</a>
                   <a href={`https://happyrachel.github.io/${item.demoAddress}`}>演示demo</a>
                   <figcaption>{item.desc}</figcaption>
