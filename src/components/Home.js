@@ -13,6 +13,7 @@ class Home extends React.Component{
                 <dd><span>毕业院校：</span>河北工程大学</dd>
                 <dd><span>学历：</span>本科</dd>
                 <dd><span>专业：</span>信息管理与信息系统</dd>
+                <dd><span>英语：</span>六级</dd>
                 <dd><span>应聘岗位：</span>web前端工程师</dd>
                 <dd><span>现居住地：</span>河北秦皇岛</dd>
               </dl>
